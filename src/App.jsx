@@ -1,6 +1,8 @@
 function App() {
   return (
-    <div className="ml-10 mt-10 text-3xl text-sky-300">Newsletter Sign-up</div>
+    <div className="text-tomato ml-10 mt-10 text-[6rem]">
+      Newsletter Sign-up
+    </div>
   );
 }
 
