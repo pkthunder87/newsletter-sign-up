@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div className="text-tomato ml-10 mt-10 text-[6rem]">
+    <div className=" grid h-[60rem]  w-[95rem] justify-center rounded-3xl bg-frontend-white">
       Newsletter Sign-up
     </div>
   );
