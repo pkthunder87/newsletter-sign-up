@@ -1,5 +1,6 @@
 import Features from './components/Features';
 import Header from './components/Header';
+import Image from './components/Image';
 import SignUp from './components/SignUp';
 
 function App() {
@@ -11,11 +12,7 @@ function App() {
         <SignUp />
       </div>
       <div className="grid">
-        <img
-          className="-mr-4 scale-[.94] self-center justify-self-end"
-          src="./illustration-sign-up-desktop.svg"
-          alt="Charts illustration"
-        />
+        <Image />
       </div>
     </div>
   );
