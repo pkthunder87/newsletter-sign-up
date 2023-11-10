@@ -6,7 +6,7 @@ function SignUp() {
           Email address
         </label>
         <input
-          className="mt-4 h-20 cursor-pointer rounded-xl border p-8"
+          className="mt-4 h-20 cursor-pointer rounded-xl border px-10 ring ring-transparent ring-offset-[-2px] hover:ring-dark-slate-grey focus:outline-none focus:ring-dark-slate-grey"
           type="text"
           id="email"
           placeholder="email@company.com"
