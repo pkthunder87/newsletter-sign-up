@@ -1,4 +1,4 @@
-function SignUp() {
+function Email() {
   return (
     <div className="mt-16">
       <form action="" className="flex flex-col">
@@ -11,7 +11,7 @@ function SignUp() {
           id="email"
           placeholder="email@company.com"
         />
-        <button className=" hover:to-orange hover:from-pink mt-8 h-20 rounded-xl bg-dark-slate-grey text-frontend-white   hover:bg-gradient-to-r">
+        <button className=" mt-8 h-20 rounded-xl bg-dark-slate-grey text-frontend-white hover:bg-gradient-to-r hover:from-pink   hover:to-orange">
           Subscribe to monthly newsletter
         </button>
       </form>
@@ -19,4 +19,4 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default Email;
