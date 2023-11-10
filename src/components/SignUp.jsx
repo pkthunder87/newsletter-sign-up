@@ -6,12 +6,12 @@ function SignUp() {
           Email address
         </label>
         <input
-          className="mt-4 h-20 rounded-xl border p-8"
+          className="mt-4 h-20 cursor-pointer rounded-xl border p-8"
           type="text"
           id="email"
           placeholder="email@company.com"
         />
-        <button className="mt-8 h-20 rounded-xl bg-dark-slate-grey text-frontend-white">
+        <button className=" hover:to-orange hover:from-pink mt-8 h-20 rounded-xl bg-dark-slate-grey text-frontend-white   hover:bg-gradient-to-r">
           Subscribe to monthly newsletter
         </button>
       </form>
