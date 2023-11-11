@@ -1,7 +1,16 @@
+import { useNavigate } from 'react-router-dom';
+
 function Email() {
+  const navigate = useNavigate();
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    navigate('/success');
+  }
+
   return (
     <div className="mt-16">
-      <form action="" className="flex flex-col">
+      <form onSubmit={handleSubmit} className="flex flex-col">
         <label className="text-[1.6rem] font-bold" htmlFor="email">
           Email address
         </label>
