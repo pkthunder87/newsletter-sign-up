@@ -1,4 +1,4 @@
-import Email from '../components/Email';
+import EmailForm from '../components/EmailForm';
 import Features from '../components/Features';
 import Header from '../components/Header';
 import Image from '../components/Image';
@@ -9,7 +9,7 @@ function SignUp() {
       <div className="my-24 ml-12 mr-0">
         <Header />
         <Features />
-        <Email />
+        <EmailForm />
       </div>
       <div className="grid">
         <Image />
