@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
+import toast from 'react-hot-toast';
 
 function EmailForm() {
   const [userEmail, setUserEmail] = useState('');
@@ -25,13 +26,21 @@ function EmailForm() {
   // }
 
   function onSubmit(data) {
+    toast.success('Monthly subscribtion successful!');
     setUserEmail(data.email);
     navigate('/success');
   }
 
+  function onError(data) {
+    toast.error(data.email.message);
+  }
+
   return (
     <div className="mt-16">
-      <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
+      <form
+        onSubmit={handleSubmit(onSubmit, onError)}
+        className="flex flex-col"
+      >
         <label className="text-[1.6rem] font-bold" htmlFor="email">
           Email address
         </label>
