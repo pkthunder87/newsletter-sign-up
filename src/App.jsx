@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 
@@ -6,13 +7,18 @@ import PageNotFound from './pages/PageNotFound';
 import SignUp from './pages/SignUp';
 
 function App() {
+  const [userEmail, setUserEmail] = useState('');
+
   return (
     <>
       <BrowserRouter>
         <Routes>
           <Route index element={<SignUp />} />
-          <Route path="signup" element={<SignUp />} />
-          <Route path="success" element={<Success />} />
+          <Route
+            path="signup"
+            element={<SignUp setUserEmail={setUserEmail} />}
+          />
+          <Route path="success" element={<Success userEmail={userEmail} />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>

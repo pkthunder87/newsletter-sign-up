@@ -1,11 +1,8 @@
-import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
 
-function EmailForm() {
-  const [userEmail, setUserEmail] = useState('');
-
+function EmailForm({ setUserEmail }) {
   const {
     register,
     handleSubmit,
@@ -26,7 +23,7 @@ function EmailForm() {
   // }
 
   function onSubmit(data) {
-    toast.success('Monthly subscribtion successful!');
+    toast.success('Monthly subscription successful!');
     setUserEmail(data.email);
     navigate('/success');
   }

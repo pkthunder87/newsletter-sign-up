@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
-function Success() {
+function Success({ userEmail }) {
   const navigate = useNavigate();
 
   function handleClick(e) {
@@ -19,9 +19,8 @@ function Success() {
         Thanks for subscribing!
       </h2>
       <p className="text-[1.3rem] leading-normal md:mt-2">
-        A confirmation email has been sent to{' '}
-        <strong>ash@loremcompany.com</strong>. Please open it and click the
-        button inside to confirm your subscription.
+        A confirmation email has been sent to <strong>{userEmail}</strong>.
+        Please open it and click the button inside to confirm your subscription.
       </p>
       <button
         onClick={handleClick}
