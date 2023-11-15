@@ -13,7 +13,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route index element={<SignUp />} />
+          <Route index element={<SignUp setUserEmail={setUserEmail} />} />
           <Route
             path="signup"
             element={<SignUp setUserEmail={setUserEmail} />}
