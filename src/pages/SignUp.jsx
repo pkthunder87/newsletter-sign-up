@@ -5,7 +5,7 @@ import Image from '../components/Image';
 
 function SignUp({ setUserEmail }) {
   return (
-    <div className=" grid h-[60rem] w-[90rem] grid-cols-[50%_50%] rounded-[28px] bg-frontend-white px-8 pt-0">
+    <div className=" grid h-[60rem] w-[90rem] grid-cols-[50%_50%] rounded-[28px] bg-frontend-white px-8 pt-0 shadow-[0_35px_80px_30px_rgba(0,0,0,0.2)]">
       <div className="my-24 ml-12 mr-0">
         <Header />
         <Features />
