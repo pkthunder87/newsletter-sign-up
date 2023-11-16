@@ -5,6 +5,7 @@ import { Toaster } from 'react-hot-toast';
 import Success from './pages/Success';
 import PageNotFound from './pages/PageNotFound';
 import SignUp from './pages/SignUp';
+import Footer from './components/Footer';
 
 function App() {
   const [userEmail, setUserEmail] = useState('');
@@ -22,6 +23,7 @@ function App() {
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
+      <Footer />
 
       <Toaster
         position="top-center"
