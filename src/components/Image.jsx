@@ -6,7 +6,7 @@ function Image() {
         srcSet="./illustration-sign-up-mobile.svg"
       />
       <img
-        className="ml-16 scale-[.94] self-center justify-self-end"
+        className="md:ml-16 md:scale-[.94] md:self-center md:justify-self-end"
         src="./illustration-sign-up-desktop.svg"
         alt="Charts illustration"
       />

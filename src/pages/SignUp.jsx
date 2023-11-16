@@ -5,13 +5,13 @@ import Image from '../components/Image';
 
 function SignUp({ setUserEmail }) {
   return (
-    <div className=" grid h-[60rem] w-[90rem] grid-cols-[50%_50%] rounded-[28px] bg-frontend-white px-8 pt-0 shadow-[0_35px_80px_30px_rgba(0,0,0,0.2)]">
-      <div className="my-24 ml-12 mr-0">
+    <div className="grid h-[100dvh] w-[100dvw] grid-cols-1 bg-frontend-white pt-0 md:h-[60rem] md:w-[90rem] md:grid-cols-[50%_50%] md:rounded-[28px] md:px-8 md:shadow-[0_35px_80px_30px_rgba(0,0,0,0.2)]">
+      <div className="mx-10 md:my-24 md:ml-12 md:mr-0">
         <Header />
         <Features />
         <EmailForm setUserEmail={setUserEmail} />
       </div>
-      <div className="grid">
+      <div className="-order-1 grid md:order-2">
         <Image />
       </div>
     </div>

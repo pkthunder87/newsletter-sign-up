@@ -13,10 +13,10 @@ function EmailForm({ setUserEmail }) {
   const isSubmitting = navigate.state === 'submitting';
 
   const inputNoErrorClasses =
-    'mt-4 h-20 cursor-pointer rounded-xl border px-10 ring ring-transparent ring-offset-[-2px] hover:ring-dark-slate-grey focus:outline-none focus:ring-dark-slate-grey';
+    'mt-4 h-[5.5rem] md:h-20 cursor-pointer rounded-xl border px-10 ring ring-transparent ring-offset-[-2px] hover:ring-dark-slate-grey focus:outline-none focus:ring-dark-slate-grey';
 
   const inputErrorClasses =
-    'mt-4 h-20 cursor-pointer rounded-xl border bg-red-100 px-10 ring ring-transparent ring-offset-[-2px] hover:ring-dark-slate-grey focus:outline-none focus:ring-red-500 text-red-500';
+    'mt-4 h-[5.5rem] md:h-20 cursor-pointer rounded-xl border bg-red-100 px-10 ring ring-transparent ring-offset-[-2px] hover:ring-dark-slate-grey focus:outline-none focus:ring-red-500 text-red-500';
 
   function onSubmit(data) {
     toast.success('Monthly subscription successful!');
@@ -29,7 +29,7 @@ function EmailForm({ setUserEmail }) {
   }
 
   return (
-    <div className="mt-16">
+    <div className="mt-[3.5rem] md:mt-16">
       <form
         onSubmit={handleSubmit(onSubmit, onError)}
         className="flex flex-col"
@@ -63,7 +63,7 @@ function EmailForm({ setUserEmail }) {
         />
 
         <button
-          className=" mt-8 h-20 rounded-xl bg-dark-slate-grey text-frontend-white hover:bg-gradient-to-r hover:from-pink   hover:to-orange"
+          className=" mt-8 h-[5.5rem] rounded-xl bg-dark-slate-grey font-bold text-frontend-white hover:bg-gradient-to-r hover:from-pink   hover:to-orange md:h-20"
           disabled={isSubmitting}
         >
           Subscribe to monthly newsletter
