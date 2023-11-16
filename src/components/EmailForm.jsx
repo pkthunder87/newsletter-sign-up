@@ -39,7 +39,7 @@ function EmailForm({ setUserEmail }) {
             Email address
           </label>
           {errors.email?.message && (
-            <small className=" -mb-2 mt-2 text-center font-bold text-red-500">
+            <small className="  text-center  font-bold text-red-500">
               {errors.email.message}
             </small>
           )}
