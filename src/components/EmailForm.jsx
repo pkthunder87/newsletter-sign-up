@@ -13,10 +13,10 @@ function EmailForm({ setUserEmail }) {
   const isSubmitting = navigate.state === 'submitting';
 
   const inputNoErrorClasses =
-    'mt-4 h-[5.5rem] md:h-20 cursor-pointer rounded-xl border px-10 ring ring-transparent ring-offset-[-2px] hover:ring-dark-slate-grey focus:outline-none focus:ring-dark-slate-grey';
+    'mt-4 md:pb-[.2rem] h-[5.5rem] md:h-[5.6rem]  md:mt-[.9rem] cursor-pointer rounded-xl border border-[#bbb] px-[2.32rem] ring ring-transparent ring-offset-[-2px] hover:ring-dark-slate-grey focus:outline-none focus:ring-dark-slate-grey';
 
   const inputErrorClasses =
-    'mt-4 h-[5.5rem] md:h-20 cursor-pointer rounded-xl border bg-red-100 px-10 ring ring-transparent ring-offset-[-2px] hover:ring-dark-slate-grey focus:outline-none focus:ring-red-500 text-red-500';
+    'mt-4 md:pb-[.2rem] h-[5.5rem] md:h-[5.6rem] md:mt-[.9rem] cursor-pointer rounded-xl border border-[#bbb] bg-red-100 px-[2.32rem] ring ring-transparent ring-offset-[-2px] hover:ring-dark-slate-grey focus:outline-none focus:ring-red-500 text-red-500';
 
   function onSubmit(data) {
     toast.success('Monthly subscription successful!');
@@ -35,7 +35,10 @@ function EmailForm({ setUserEmail }) {
         className="flex flex-col"
       >
         <div className="flex justify-between">
-          <label className="text-[1.4rem] font-bold" htmlFor="email">
+          <label
+            className="text-[1.4rem] font-bold md:text-[1.2rem]"
+            htmlFor="email"
+          >
             Email address
           </label>
           {errors.email?.message && (
@@ -63,10 +66,10 @@ function EmailForm({ setUserEmail }) {
         />
 
         <button
-          className=" mt-8 h-[5.5rem] rounded-xl bg-dark-slate-grey font-bold text-frontend-white hover:bg-gradient-to-r hover:from-pink   hover:to-orange md:h-20"
+          className=" mt-8 h-[5.5rem] rounded-xl bg-dark-slate-grey font-bold text-frontend-white hover:bg-gradient-to-r hover:from-pink hover:to-orange   md:mt-[2.4rem] md:h-[5.6rem]"
           disabled={isSubmitting}
         >
-          Subscribe to monthly newsletter
+          <p className="md:mt-1">Subscribe to monthly newsletter</p>
         </button>
       </form>
     </div>
