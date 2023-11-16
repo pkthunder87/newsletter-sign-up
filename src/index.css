@@ -8,6 +8,6 @@
   }
 
   body {
-    @apply flex h-[100dvh] w-[100dvw] items-center justify-center overflow-hidden bg-charcoal-grey text-[1.7rem] text-dark-slate-grey antialiased md:text-[1.6rem];
+    @apply flex h-[875px] w-[100dvw] items-center justify-center bg-charcoal-grey text-[1.7rem] text-dark-slate-grey antialiased md:h-[100dvh] md:overflow-hidden md:text-[1.6rem];
   }
 }
