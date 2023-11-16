@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="absolute inset-x-0 bottom-0 xl:bottom-72">
+    <footer className=" absolute inset-x-0 bottom-0">
       <p className=" text-center text-lg text-dark-slate-grey md:text-[#eee]">
         Challenge by &thinsp;
         <a
