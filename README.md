@@ -11,7 +11,7 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 ### Links
 
-- Live Site URL: [Github Pages](https://pkthunder-rpsls.netlify.app/)
+- Live Site URL: [Netlify](https://pkthunder-signup.netlify.app/)
 
 ### Built with
 
